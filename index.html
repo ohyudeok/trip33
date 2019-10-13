@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>목포여행</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+		#monitor{position:fixed; background:black; padding:5px; top:0; right:0; width:70px; height:20px; color:white;}
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		header .wrap, footer .wrap{width:100%;}
+		header .wrap{background:url(1back.jpg);}
+		.wrap{ width:1200px; margin:auto; background:#ddd; height:800px; position:relative;}
+		body, h1, p{margin:0; padding:0;}
+		h1{font-family: 'TmonMonsori';}
+		header .wrap h1{color:white; position:absolute; top:300px; left:calc(50% - 274px); text-shadow: 8px 8px 0px black; font-size:80px;}
+		.pan{background:black; height:800px; opacity:0; transition: all 1s}
+		.pan:hover{opacity:0.7}
+		#record{margin:auto; display:block; width:500px; position:absolute; left:calc(50% - 250px); top:100px;}
+		#rec{display:block; width:150px; margin-top: 20px; position:absolute; margin-left:20px; top:50px;}
+		.h1{top:100px; position:absolute; left:calc(20% - 161px); opacity:1; font-size:50px;}
+		.h2{top:100px; position:absolute; left:calc(60% - 150px); font-size:50px;}
+		.p1{width:300px; position:absolute; top:250px; font-size:10pt; line-height:1.8; opacity:1; left:calc(30% - 150px);}
+
+		.p2{width:300px; position:absolute; left:calc(70% - 150px); top:230px; font-size:10pt; line-height:1.8; opacity:0;}
+		#img1{width:500px; opacity:0; top:200px; margin-left:50%; position:absolute;}
+		#img2{width:100px; top:200px; position:absolute; margin-left:53%; opacity:0;}
+		#img3{width:100px; top:350px; position:absolute; margin-left:48%; opacity:0;}
+		#img4{width:100px; top:350px; position:absolute; margin-left:85%; opacity:0;}
+		#img5{width:100px; top:200px; position:absolute; margin-left:80%; opacity:0;}
+		footer .wrap{height:150px; background:black; color:white;}
+		footer p{text-align:center; color:white; width:inherit; padding-top:50px;}
+
+		.s1 .wrap{background:white;}
+
+		.whi{background:black; height:800px; opacity:1; width:1500px; position:absolute; z-index:20;}
+
+		#h5{top:280px; position:absolute; margin-left:10%; opacity:0; font-size:50px;}
+
+		@keyframes ltor3{
+			from{margin-left:-50%; opacity:0;}
+			to{margin-left:10%; opacity:1;}
+		}
+		
+
+		@keyframes bt{
+			from{top:300px; opacity:0;}
+			to{top:100px; opacity:1;}
+		}
+
+		@keyframes bt2{
+			from{top:550px; opacity:0;}
+			to{top:250px; opacity:1;}
+		}
+
+		@keyframes bt3{
+			from{top:300px; opacity:0;}
+			to{top:200px; opacity:1;}
+		}
+
+		@keyframes bt4{
+			from{top:550px; opacity:0;}
+			to{top:350px; opacity:1;}
+		}
+
+		@keyframes opau{
+			from{opacity:0; top:500px;}
+			to{opacity:1; top:100px;}
+		}
+
+		@keyframes opad{
+			from{opacity:0; top:800px;}
+			to{opacity:1; top:550px;}
+		}
+
+		@keyframes rtol{
+			from{opacity:0; left:1500px;}
+			to{opacity:1; left:600px;}
+		}	
+
+		@keyframes bt10{
+			from{opacity:0; top:600px;}
+			to{opacity:1; top:350px;}
+		}
+
+		@keyframes ltor{
+			from{left:200px;}
+			to{left:800px;}
+		}
+
+		@keyframes opa2{
+			from{opacity:1;}
+			to{opacity:0;}
+		}
+
+		@keyframes opa{
+			from{opacity:1;}
+			to{opacity:0;}
+		}
+
+		@keyframes ltor2{
+			from{margin-left:-20%; opacity:0;}
+			to{margin-left:10%; opacity:1;}
+		}
+
+		@keyframes tb{
+			from{top:-300px; opacity:0;}
+			to{top:400px; opacity:1;}
+		}
+
+		@keyframes rtol6{
+			from{left:150%; opacity:0;}
+			to{left:50%; opacity:1;}
+		}
+
+		@keyframes rtol66{
+			from{left:130%; opacity:0;}
+			to{left:50%; opacity:1;}
+		}
+
+		@keyframes rtol666{
+			from{left:160%; opacity:0;}
+			to{left:73%; opacity:1;}
+		}
+
+		@keyframes ro{
+			from{opacity: 0;}
+			to{transform:rotate(360deg); opacity:1;}
+		}
+
+		@keyframes opac{
+			from{opacity:0;}
+			to{opacity:1;}
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<div class="pan"></div>
+			<img src="record.gif" id="record">
+			<img src="rec.gif" id="rec">
+			<h1>목포 레트로 여행</h1>
+		</div>
+	</header>
+	<section class="s1">
+		<div class="wrap" id="s1">
+			<h2 class="h1" id="h1">목포근대역사관</h2>
+			<p class="p1" id="text1">목포에서 가장 오래된 이 건물은 1897년 10월 목포항이 개항되고, 1898년 10월 목포일본영사관이 목포에 설치됨에 따라 영사관으로 지어진 건물이다. 목포이사청, 목포부청사 등으로 사용되었고, 광복이후 1947년부터 목포시청, 1974년부터 (구)목포일본영사관, 1990년 1월부터는 목포문화원으로 사용되다 최근 목포문화원이 이전함에 따라 보수 후 2014년 목포근대역사관 1관으로 개관했다.
+			<br>
+			2019년 여름에 흥행리에 방영한 TVN 드라마, 아이유, 여진구 주연의 호텔 델루나 촬영지로 유명하다.</p>
+			<img src="history.png" id="img1">
+			<img src="jj1.png" id="img2">
+			<img src="jj2.png" id="img3">
+			<img src="jj4.png" id="img4">
+			<img src="jj5.png" id="img5">
+		</div>
+	</section>
+	<section class="s2">
+		<div class="wrap" style="width:100%; background:url(super.jpg); background-size:cover;" id="s2">
+			<p class="p2" style="padding:20px; background:black; color:white;" id="t2">누적 관람객 700만 명을 넘어선 영화 ‘1987’ 촬영지 목포 서산동의 ‘연희네슈퍼’.
+			<br>
+			‘연희네슈퍼’는 영화 ‘1987’에서 평범한 87학번 대학 신입생 ‘연희’가 살던 달동네 구멍가게로, 이한열 역의 강동원과 연희 역의 김태리가 슈퍼 앞 평상에서 시국의 아픔을 진솔하게 이야기하는 장면이 촬영된 곳이다.
+			<br>
+			당시 촬영했던 영화 속 소품을 갖다놓고 촬영 당시 모습 그대로 재현해 놓고 관광객을 맞이하고 있다. 연희네슈퍼에는 영화 속에 나왔던 연탄, 생활용품, 과자류, 냉동고, 라디오 등각종 소품이 비치돼 영화 속 장면을 자연스레 떠올리게 한다.</p>
+			<img src="bul.png" style="top:300px; position:absolute; opacity:0; left:cal(30% - 360px);" id="bul">
+			<img src="taxi.gif" style="top:400px; position:absolute;" id="taxi">
+		</div>
+	</section>
+	<section class="s3" id="cl3">
+		<div class="wrap" style="width:100%; background:url(yudal.jpg); background-size:cover; overflow:hidden;" id="s3">
+			<h2 class="h1" id="h3">유달유업카페</h2>
+			<p class="p1" id="t3">1980년대를 재현해낸 듯한 카페의 전반적인 분위기를 느끼고 싶다면, '유달유업'.
+			<br>
+			소품들 하나하나가 레트로 감성을 불러 일으킨다. 카페 안에 3공간의 룸이 마련되어 있다. 각 룸마다 다양한 소품들로 아기자기하게 꾸며져 있으니 곳곳에서 향취를 즐겨보는 것도 나름의 재미이다.</p>
+			<div id="whi"></div>
+			<img src="yudalw.jpg" style="width:550px; position:absolute; left:750px; top:100px; z-index:0; opacity:0;" id="yudal1">
+			<img src="yudal2.jpg" style="width:550px; position:absolute; left:140px; top:550px; z-index:0; opacity:0;" id="yudal2">
+			<img src="yudal3.jpg" style="width:550px; position:absolute; left:750px; top:550px; z-index:0; opacity:0;" id="yudal3">
+			<img src="yudal4.png" style="width:250px; position:absolute; left:600px; top:400px; opacity:0;" id="yudal4">
+		</div>
+	</section>
+	<section class="s4">
+		<div class="wrap" style="width:100%; background:url(back2.jpg); background-size:cover; overflow:hidden;" id="s4">
+			<h2 class="h2" id="h4" style="color:white;opacity:0;">유달동 사진관</h2>
+			<p class="p2" id="t4" style="color:white;">레트로 감성 흑백 사진을 찍고 싶다면, '유달동 사진관'으로 오세요.
+			<br>
+			부담스럽지 않고 저렴한 가격과 편안한 분위기 속에서 분위기 있는 흑백사진을 찍을 수 있답니다. 여행 기념 사진으로 한 장 남기면 좋겠죠?</p>
+			<img src="pic.png" style="width:500px; opacity:0; top:300px; margin-left:10%; position:absolute;" id="pic">
+		</div>
+		</div>
+	</section>
+	<section class="s5">
+		<div class="wrap" style="width:100%; background:white; background-size:cover; overflow:hidden;" id="s5">
+			<h2 class="h1" id="h6" style="opacity:0;">코롬방제과</h2>
+			<p class="p1" id="t66" style="opacity:0;">목포에서 제일 가는 빵집! 이 집 새우바게트를 안먹어봤으면 말을 하지 마세요!
+			<br>
+			‘크림치즈 바게트(5,000원)’와 ‘새우 바게트(5,000원)’가 유명한 목포 코롬방제과!
+			SINCE 1949 라고 하니, 올해가 딱 70주년을 맞은 나름 전통 있는 빵집. 
+			전국 유명 빵집을 순례하는 빵순이라면 목포 레트로여행에서 빼놓을 수 없는 필수 코스!
+			바게트 나오는 시간과 1인당 구매 개수를 체크하고 찾아와주세요~</p>
+			<img src="bbang.jpg" style="width:250px; position:absolute; left:50%; opacity:0;" id="bbang">
+			<img src="bbangg.jpg" style="width:250px; position:absolute; left:73%; opacity:0;" id="bbangg">
+			<img src="colombang.jpg" style="width:600px; position:absolute; left:50%; top:300px; opacity:0;" id="colombang">
+			<img src="bread.png" style="width:300px; position:absolute;top:400px; left:30px; opacity:0;" id="bread">
+
+		</div>
+	</section>
+	<section class="s6">
+		<div class="wrap" style="width:100%; background:white; overflow:hidden;" id="s6">
+			<h2 class="h2" id="h7" style="opacity:0;">장터 식당</h2>
+			<p class="p2" id="t7" style="color:black; opacity:0;">맛의 고장 목포! 여행 하면 빼놓을 수 없는 것은 바로
+			~ 두구두구두구!! 음식!
+			<br>
+			예스러운 시장 안에 위치한 장터 식당으로 고고고~ 맛있는 게살 요리들이 눈 앞에 펼쳐집니다. 음식들로 바다내음새에 흠뻑 젖어보세요.</p>
+			<img src="jjang.jpg" style="width:400px; position:absolute; opacity:0;" id="jjang1">
+			<img src="jjang.jpg" style="width:400px; position:absolute; top:500px; left:800px; opacity:0;" id="jjang2">
+			<img src="gea.png" style="width:500px; position:absolute; top:200px; left:330px; opacity:0;" id="gea1">
+			<img src="gea.png" style="width:100px; position:absolute; top:100px; left:1300px; opacity:0;" id="gea2">
+		</div>
+	</section>
+	<section>
+		<div class="wrap" style="width:100%; background:white;">
+			<h1 id="h5">레트로 맛집 <br>목포로 놀러오세요!</h1>
+		</div>
+	</section>
+	<footer>
+		<div class="wrap">
+			<p>
+			@ 20191013 designed by ohyudeok
+			</p>
+		</div>
+	</footer>
+
+	<div id="monitor"></div>
+	</div>
+
+	<script type="text/javascript">
+
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+		if(t > 500){ h1.style.animation = "bt 2s forwards";}
+		else{h1.style.animation = "";}
+		if(t > 500){ text1.style.animation = "bt2 2.5s forwards";}
+		else{text1.style.animation = "";}
+		if(t > 500){ img1.style.animation = "bt3 2.5s forwards";}
+		else{img1.style.animation = "";}
+		if(t > 500){ img3.style.animation = "bt4 2.5s forwards";}
+		else{img3.style.animation = "";}
+		if(t > 500){ img4.style.animation = "bt4 2.5s forwards";}
+		else{img4.style.animation = "";}
+		if(t > 500){ img2.style.animation = "bt3 2s forwards";}
+		else{img2.style.animation = "";}
+		if(t > 500){ img5.style.animation = "bt3 2s forwards";}
+		else{img5.style.animation = "";}
+		if(t > 1100){ s1.style.animation = "opa2 1.5s forwards";}
+		else{s1.style.animation = "";}
+		
+		if(t > 1300){ t2.style.animation = "bt2 2.5s forwards";}
+		else{t2.style.animation = "";}
+		if(t > 1300){ bul.style.animation = "bt10 4s alternate infinite";}
+		else{bul.style.animation = "";}
+		if(t > 1300){ taxi.style.animation = "ltor 4s alternate infinite";}
+		else{taxi.style.animation = "";}
+		if(t > 1900){ s2.style.animation = "opa2 1.5s alternate forwards";}
+		else{s2.style.animation = "";}
+		
+		if(t > 2200){ yudal1.style.animation = "opau 2s forwards";}
+		else{yudal1.style.animation = "";}
+		if(t > 2200){ yudal2.style.animation = "opad 2.5s forwards";}
+		else{yudal2.style.animation = "";}
+		if(t > 2200){ yudal3.style.animation = "opad 2.5s forwards";}
+		else{yudal3.style.animation = "";}
+		if(t > 2200){ yudal4.style.animation = "rtol 3s forwards";}
+		else{yudal4.style.animation = "";}
+		if(t > 2200){ h3.style.animation = "bt 2s forwards";}
+		else{h3.style.animation = "";}
+		if(t > 2200){ t3.style.animation = "bt2 2.5s forwards";}
+		else{t3.style.animation = "";}
+		if(t > 2700){ s3.style.animation = "opa2 1.5s alternate forwards";}
+		else{s3.style.animation = "";}
+
+		if(t > 3000){ h4.style.animation = "bt 2s forwards";}
+		else{h4.style.animation = "";}
+		if(t > 3000){ t4.style.animation = "bt2 2.5s forwards";}
+		else{t4.style.animation = "";}
+		if(t > 3000){ pic.style.animation = "ltor2 2.5s forwards";}
+		else{pic.style.animation = "";}
+		if(t > 3600){ s4.style.animation = "opa2 1.5s forwards";}
+		else{s4.style.animation = "";}
+
+		if(t > 3800){ bread.style.animation = "tb 2s forwards";}
+		else{bread.style.animation = "";}
+		if(t > 3800){ colombang.style.animation = "rtol6 2s forwards";}
+		else{colombang.style.animation = "";}
+		if(t > 3800){ bbang.style.animation = "rtol66 2s forwards";}
+		else{bbang.style.animation = "";}
+		if(t > 3800){ bbangg.style.animation = "rtol666 2s forwards";}
+		else{bbangg.style.animation = "";}
+		if(t > 3800){ h6.style.animation = "bt 2s forwards";}
+		else{h6.style.animation = "";}
+		if(t > 3800){ t66.style.animation = "bt2 2.5s forwards";}
+		else{t66.style.animation = "";}
+		if(t > 4487){ s5.style.animation = "opa2 1.5s forwards";}
+		else{s5.style.animation = "";}
+
+		if(t > 4500){ gea1.style.animation = "ro 3s infinite";}
+		else{gea1.style.animation = "";}
+		if(t > 4500){ gea2.style.animation = "ro 5s infinite";}
+		else{gea2.style.animation = "";}
+		if(t > 4500){ h7.style.animation = "bt 2s forwards";}
+		else{h7.style.animation = "";}
+		if(t > 4500){ t7.style.animation = "bt2 2.5s forwards";}
+		else{t7.style.animation = "";}
+		if(t > 4500){ jjang1.style.animation = "opac 2.5s forwards";}
+		else{jjang1.style.animation = "";}
+		if(t > 4500){ jjang2.style.animation = "opac 2.5s forwards";}
+		else{jjang2.style.animation = "";}
+		if(t > 5200){ s6.style.animation = "opa2 1.5s forwards";}
+		else{s6.style.animation = "";}
+
+		if(t > 5200){ h5.style.animation = "ltor2 3s forwards";}
+		else{h5.style.animation = "";}
+
+	}
+	</script>
+
+</body>
+</html>
